@@ -1,9 +1,7 @@
 const inquirer = require('inquirer');
 const { join } = require('path');
 const { writeFile } = require('fs/promises');
-const shapejs = require('./lib/shapes');
 const { generateSVG } = require('./lib/svg');
-const { textLength } = require('./lib/text');
 
 class Generator{
   constructor(){
@@ -35,7 +33,6 @@ class Generator{
       },
     ])
     .then(({ text }) => {
-      textLength(text);
       writeFile(join(__dirname, 'output', 'logo.svg'), generateSVG(text, color, shapes, shapeColor));
       console.log('SVG generated');
     })
@@ -44,18 +41,8 @@ class Generator{
       console.log('Oops. Something went wrong.');
     });
   }
-
-  postText(){
-    return inquirer
-    .prompt([
-      
-    ])
-    .then(() =>
-  console.log('check'));
-  }
 }
 
-module.exports = Generator;
 const gen = new Generator;
 
 gen.run();
