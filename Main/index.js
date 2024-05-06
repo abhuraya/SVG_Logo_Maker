@@ -32,7 +32,7 @@ class Generator{
         message: 'Enter the color of the shape',
       },
     ])
-    .then(({ text }) => {
+    .then(({ text, color, shapes, shapeColor }) => {
       writeFile(join(__dirname, 'output', 'logo.svg'), generateSVG(text, color, shapes, shapeColor));
       console.log('SVG generated');
     })
