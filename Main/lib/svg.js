@@ -13,6 +13,7 @@ function shapeCode(shapes){
   }
 }
 
+//function will generate the SVG with input from the inquirer prompt also uses the function from above to input the shape
 function generateSVG(text, color, shapes, shapeColor) {
 
   return `<svg version="1.1"

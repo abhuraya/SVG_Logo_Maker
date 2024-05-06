@@ -1,12 +1,15 @@
+//variables set
 const inquirer = require('inquirer');
 const { join } = require('path');
 const { writeFile } = require('fs/promises');
 const { generateSVG } = require('./lib/svg');
 
+//function to prompt and accept user input
+
 class Generator{
   constructor(){
   }
-
+//prompts
   run(){
     return inquirer
     .prompt([
@@ -32,6 +35,7 @@ class Generator{
         message: 'Enter the color of the shape',
       },
     ])
+    //file created using input and importing a functioin 
     .then(({ text, color, shapes, shapeColor }) => {
       writeFile(join(__dirname, 'output', 'logo.svg'), generateSVG(text, color, shapes, shapeColor));
       console.log('SVG generated');

@@ -1,5 +1,7 @@
 const svg = require('./svg');
 
+//class constructors for different shapes
+
 class shapesjs{
     constructor(shapes){
         this.shapes = shapes
