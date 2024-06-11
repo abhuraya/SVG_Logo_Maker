@@ -1,4 +1,4 @@
-# SVGlogoGenrator
+# SVG Logo Maker
 this is a command line application that will create a SVG file based on information provided in the terminal. you have the choice of 5 shapes to choose from and you can choose any color you want by simply stating the color or inputting a hex code, you can also put a 3 letter abbreviation into your logo
 
 Demo Video
