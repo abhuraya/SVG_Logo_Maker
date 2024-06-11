@@ -1,29 +1,25 @@
-# SVG Logo Maker
+# SVGlogoGenrator
+this is a command line application that will create a SVG file based on information provided in the terminal. you have the choice of 5 shapes to choose from and you can choose any color you want by simply stating the color or inputting a hex code, you can also put a 3 letter abbreviation into your logo
 
-## Description
+Demo Video
+<video controls src="assets/SVG Logo Maker.mp4" title="Demo"></video>
 
-- An application to create a logo using user input
+
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Challenges](#Challenges)
+
+
 
 ## Installation
-
-- Open file with code viewer such as VS code, or git bash
-- Once file in open enter 'npm install inquirer 8.2.4' and press enter
+all you have to do is fork this git and then clone it into your own files, then open the folder and input node index.js into your terminal 
 
 ## Usage
+the end user could use this to create simple and easy logos extremely quickly. 
 
-- In the terminal line navigate to the 'SVG_LOGO_MAKER/Main' folder
-- Once in the main folder type 'node index.js' in to the terminal and press enter
-- A series of questions which require input and a selection will appear
-- After inputs and selections are entered a logo.svg file will be created in the output folder
-- The SVG file can be opened with an SVG viewer such as a webbrowser
+## Challenges
+this project posed many challenges during coding. mainly the lack of available information on ||||||||||||||||. Alternatively another problem was finding an abundant information on svg generation and using it to code my half of the project before realizing that the type of generation i was doing did not apply at all to the project at hand. 
+another issue i had was figuring out how to set up every function without repeating myself and breaking the DRY rule
 
-
-## Credits
-
-Programmers:Abhudaya Rayamajhi
-
-MIT Licence
-
-<video controls src="Assets/SVG Logo Maker.mp4" title="SVG_Logo_Maker"></video>
-
+### GitHub:
 https://abhuraya.github.io/SVG_Logo_Maker/
