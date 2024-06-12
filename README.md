@@ -23,3 +23,4 @@ another issue i had was figuring out how to set up every function without repeat
 
 ### GitHub:
 https://abhuraya.github.io/SVG_Logo_Maker/
+https://github.com/abhuraya/SVG_Logo_Maker
